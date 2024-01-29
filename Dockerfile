@@ -6,9 +6,9 @@ LABEL maintainer="Auto*Mat, z. s. auto-mat@auto-mat.cz"
 ENV LOCAL_BIN=/usr/local/bin
 RUN apk add --update --no-cache autossh
 
-COPY ./run.sh "${LOCAL_BIN}"
+COPY ./run.sh ${LOCAL_BIN}
 
-RUN chmod +x "${LOCAL_BIN}/run.sh";
+RUN chmod +x ${LOCAL_BIN}/run.sh;
 
 # Set user and group
 ARG user=appuser
