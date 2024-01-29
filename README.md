@@ -8,7 +8,7 @@ RDS PG DPNK DB proxy. Docker image use autossh to create tunnel.
 
 ```bash
 # Build Docker image
-docker buildx build -t auto0mat/aurora-rds-pg-dpnk-db-proxy:<ACTUAL_YEAR>.<SERIAL_NUMBER>
+docker buildx build -t auto0mat/aurora-rds-pg-dpnk-db-proxy:<ACTUAL_YEAR>.<SERIAL_NUMBER> .
 
 # Run Docker container
 chmod 600 "$(pwd)"/aurora-rds-pg-dpnk-db-proxy.pem
