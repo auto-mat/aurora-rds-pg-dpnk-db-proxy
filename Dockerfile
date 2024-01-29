@@ -6,7 +6,6 @@ LABEL maintainer="Auto*Mat, z. s. auto-mat@auto-mat.cz"
 ENV LOCAL_BIN=/usr/local/bin
 RUN apk add --update --no-cache autossh
 
-# Copy our source code into the container
 COPY ./run.sh "${LOCAL_BIN}"
 
 RUN chmod +x "${LOCAL_BIN}/run.sh";
